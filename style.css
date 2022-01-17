@@ -1,0 +1,215 @@
+.new-calc{
+    margin:0 auto 60px auto;
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ .pro h4,h1{
+    color: #732382;
+    padding: 10px 0;
+  
+}
+.pro h4{
+    font-weight:400 ; 
+}
+.direct-val h4{
+    font-weight:400;
+    color:#732382;
+    padding-right:10px;
+}
+.pro p{
+    margin-bottom: unset !important;
+}
+.pro label{
+    margin-bottom: unset !important;
+    font-weight:400;
+}
+.pro-inner{
+    display: flex;
+    width: fit-content;
+    border-radius: 10px;
+}
+.new-calc-input {
+    display:none;
+  }
+.new-calc-label {
+    padding: 15px 20px;
+    display: inline-block;
+    border: 1px solid #732382;
+    cursor: pointer;
+    transition: .3s ease;
+    text-align:center;
+    font-size:1.2em;
+  }
+.new-calc-label:hover{
+      background: #732382;
+      color: #fff;
+  }
+.blank-label {
+    display: none;
+}
+.new-calc-input:checked + .new-calc-label {
+    background: #732382;
+    color: #fff;
+  }
+.lbl1{
+      border-radius: 5px 0 0 5px ;
+  }
+.lbl9{
+    border-radius: 0 5px 5px 0 ;
+}
+.txt{
+    border: 1px solid #E7E7E7;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    font-size:2.3em;
+    color:#732382;
+}
+.atro{
+    position: relative;
+    width: 300px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #732382;
+    outline: none;
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #732382;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+.direct span{
+    color:#732382;
+    font-size:2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.direct{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.direct-val h4{
+    padding:10px 0 0 0;
+}
+@media only screen  and (max-width:768px){
+    .pro-inner{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+    }
+    .pro{
+        gap:unset;
+    }
+    .new-calc{
+        margin:0px auto 20px auto;
+    }
+    .new-calc-label{
+        border:unset;
+    }
+    .lbl1{
+        border-radius:6px 0 0 0 ;
+        border:1px solid #732382;
+        /*border-right: 1px solid #732382;*/
+        /*border-bottom: 1px solid #732382;*/
+    }
+    .lbl2{
+        border: 1px solid #732382;
+        border-left: unset;
+    }
+    .lbl3{
+        border-radius:0 6px 0 0 ;
+        border: 1px solid #732382;
+        border-left: unset;
+    }
+    .lbl4{
+        border: 1px solid #732382;
+        border-top: unset;
+    }
+    .lbl5{
+        border: 1px solid #732382;
+        border-left: unset;
+        border-top: unset;
+    }
+    .lbl6{
+        border: 1px solid #732382;
+        border-left: unset;
+        border-top: unset;
+    }
+    .lbl7{
+        border-radius:0 0 0 6px;
+        border: 1px solid #732382;
+        border-top: unset;
+    }
+    .lbl8{
+        border: 1px solid #732382;
+        border-left: unset;
+        border-top: unset;
+    }
+    .lbl9{
+        border-radius:0 0 6px 0;
+        border: 1px solid #732382;
+        border-left: unset;
+        border-top: unset;
+    }
+    .direct-val{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top:20px;
+    }
+    #result{
+        margin:unset;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #fff;
+        border: 4px solid #732382;
+        cursor: pointer;
+}
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #000000;
+        cursor: pointer;
+    }
+    .atro{
+        width:unset;
+    }
+}
+@media only screen  and (max-width:992px){
+    .text-new-calc p{
+        padding:20px 0 !important;
+    }
+}
